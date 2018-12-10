@@ -1,0 +1,9 @@
+{
+  "name": "deseos",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "5c14404f"
+}
