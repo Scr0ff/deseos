@@ -11,15 +11,25 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //Components
 import { PendientesComponent } from '../pages/pendientes/pendientes.component';
 import { TerminadosComponent } from '../pages/terminados/terminados.component';
+import { AgregarComponent } from '../pages/agregar/agregar.component';
+import { DetalleComponent } from '../pages/detalle/detalle.component';
 
 //Servicios
 import { ListaDeseosService } from './services/lista-deseos.service';
 
+//Pipes
+import { PlaceHolderPipe } from './pipes/placeholder.pipe';
+import { PendientesPipe } from './pipes/pendientes.pipes';
+
 @NgModule({
   declarations: [
     MyApp,
+    PlaceHolderPipe,
+    PendientesPipe,
     PendientesComponent,
     TerminadosComponent,
+    AgregarComponent,
+    DetalleComponent,
     TabsPage
   ],
   imports: [
@@ -31,6 +41,8 @@ import { ListaDeseosService } from './services/lista-deseos.service';
     MyApp,
     PendientesComponent,
     TerminadosComponent,
+    AgregarComponent,
+    DetalleComponent,
     TabsPage
   ],
   providers: [
